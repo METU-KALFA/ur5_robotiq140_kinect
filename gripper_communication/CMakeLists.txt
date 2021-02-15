@@ -162,6 +162,7 @@ include_directories(
 catkin_install_python(PROGRAMS
   scripts/gripper_state.py
   scripts/gripper_control.py
+  scripts/torq_control.py
   DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 )
 
