@@ -13,4 +13,4 @@ jobs:
   trigger:
     runs-on: ubuntu-latest
     steps:
-    - run: curl -v -XPOST -u "${{ secrets.DOCKERHUB_USERNAME}}:${{secrets.BURAK_TOKEN}}" -H "Accept:application/vnd.github.everest-preview+json" -H "Content-Type:application/json" https://github.com/METU-KALFA/docker_images/actions/workflows/docker-image.yml/dispatches --data '{"ref":"main"}'
+    - run: curl -v -XPOST -u "${{ secrets.DOCKERHUB_USERNAME}}:${{secrets.BURAK_TOKEN}}" -H "Accept:application/vnd.github.v3+json" https://github.com/METU-KALFA/docker_images/actions/workflows/docker-image.yml/dispatches --data '{"ref":"main", "name":"burak", "home":"trial"}'
