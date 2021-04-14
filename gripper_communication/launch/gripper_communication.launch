@@ -4,7 +4,7 @@
 
   <node name="gripper_state_node" pkg="gripper_communication" type="gripper_state.py" respawn="false" output="screen"></node>
   <node name="gripper_control_node" pkg="gripper_communication" type="gripper_control.py" respawn="false" output="screen"></node>
-  <node name="ft_sensor_node" pkg="gripper_communication" type="torq_control.py" respawn="false" output="screen"
-        if="$(arg publish_ft_sensor)"/>
+  <!-- <node name="ft_sensor_node" pkg="gripper_communication" type="torq_control.py" respawn="false" output="screen"
+        if="$(arg publish_ft_sensor)"/> -->
 
 </launch>

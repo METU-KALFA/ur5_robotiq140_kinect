@@ -1,0 +1,68 @@
+[
+    {
+        "step": 1,
+        "reqParts"  : ["sideRight", "connector"],
+        "reqTools"  : ["hammer"],
+        "output"    : ["asmRight"]
+    },
+    {
+        "step": 2,
+        "reqParts"  : ["sideLeft", "connector"],
+        "reqTools"  : ["hammer"],
+        "output"    : ["asmLeft1"]
+    },
+    {
+        "step": 3,
+        "reqParts"  : ["asmLeft1", "dowel"],
+        "reqTools"  : ["hammer"],
+        "output"    : ["asmLeft2"]
+    },
+    {
+        "step": 4,
+        "reqParts"  : ["asmLeft2", "ribCurved1"],
+        "reqTools"  : ["hammer"],
+        "output"    : ["asmLeft3"]
+    },
+    {
+        "step": 5,
+        "reqParts"  : ["asmLeft3", "ribCurved2"],
+        "reqTools"  : ["hammer"],
+        "output"    : ["asmLeft4"]
+    },
+    {
+        "step": 6,
+        "reqParts"  : ["asmLeft4", "ribStraight1"],
+        "reqTools"  : ["hammer"],
+        "output"    : ["asmLeft5"]
+    },
+    {
+        "step": 7,
+        "reqParts"  : ["asmLeft5", "ribStraight2"],
+        "reqTools"  : ["hammer"],
+        "output"    : ["asmLeft6"]
+    },
+    {
+        "step": 8,
+        "reqParts"  : ["asmLeft6", "dowel"],
+        "reqTools"  : ["hammer"],
+        "output"    : ["asmLeft7"]
+    },
+    {
+        "step": 9,
+        "reqParts"  : ["asmLeft7", "asmRight"],
+        "reqTools"  : ["hammer"],
+        "output"    : ["asmChairFrame"]
+    },
+    {
+        "step": 10,
+        "reqParts"  : ["asmChairFrame", "screwHex"],
+        "reqTools"  : ["allenDriver"],
+        "output"    : ["asmChairScrewed"]
+    },
+    {
+        "step": 11,
+        "reqParts"  : ["asmChairScrewed", "plank", "screw"],
+        "reqTools"  : ["screwDriver"],
+        "output"    : ["asmChair"]
+    }
+]

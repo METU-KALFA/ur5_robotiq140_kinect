@@ -40,9 +40,9 @@ def control_callback(data):
     except Exception as e:
         print("Error in connection to gripper!")
         return
+        
 def gripper_control(): 
     global gripper_socket
-    pub = rospy.Publisher('gripper_control', String, queue_size=1) # create the publisher topic
     rospy.Subscriber("gripper_control", String, control_callback) # listen for control messages
     rospy.init_node("gripper_state_control",anonymous=True)
 
